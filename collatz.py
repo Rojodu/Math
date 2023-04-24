@@ -1,7 +1,6 @@
 
 #Collatzerizer
-def collatzerize():
-    test_number = int(input("Give me a test number: "))
+def collatzerize(test_number):
 
     hold_num = test_number
     path = [test_number]
@@ -19,5 +18,5 @@ def collatzerize():
         else :
             hold_num = 0
             path.append(hold_num)
-
-    print("The Collatz path for",test_number,":", path,"with",step_count,"steps!")
+            
+    return path
